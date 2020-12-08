@@ -2,7 +2,7 @@
 
 Building a water tap with a reduced surface area for higher pressure and integrated brushes.
 
-[Prototype](./screenshots/first_draft.png)
+![Prototype](./screenshots/first_draft.png)
 
 ## Install / Run
 
