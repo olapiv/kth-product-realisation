@@ -17,10 +17,9 @@ Building a water tap with a reduced surface area for higher pressure and integra
     + Removed brushes for quicker print
     + Square grid for constant padding between holes
 
-2. v3
+1. v3
     + Added honeycomb holes for better space usage
-
-![Screenshot of v1](./screenshots/first_draft.png)
+    + Holder for external radial shaft seal ring
 
 ## Install / Run
 
