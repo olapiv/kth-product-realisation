@@ -2,7 +2,7 @@
 
 Building a water tap with a reduced surface area for higher pressure and integrated brushes.
 
-# Progress
+## Progress
 
 1. [v1](./v1.stl)
     + Brushes to clean whilst water comes out
@@ -16,6 +16,9 @@ Building a water tap with a reduced surface area for higher pressure and integra
     + Removing cone for quicker print
     + Removed brushes for quicker print
     + Square grid for constant padding between holes
+
+2. v3
+    + Added honeycomb holes for better space usage
 
 ![Screenshot of v1](./screenshots/first_draft.png)
 
