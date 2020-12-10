@@ -45,6 +45,17 @@ grid_distance_betw_holes = grid_hole_radius*2 + grid_inner_padding;
 grid_diameter = grid_rows * grid_distance_betw_holes;
 grid_hole_height = grid_height + 1;
 
+// Platform surrounding grid
+platform_height = grid_height + 0.1;
+difference() {
+    translate([0,0, grid_displacement_z ])
+        cylinder(h=grid_height,r=core_outer_radius, center=true);
+
+    translate([0,0, grid_displacement_z ])  
+        cylinder(h=platform_height,r=grid_diameter/2, center=true);
+}
+
+// Actual grid
 difference() {
     translate([0,0, grid_displacement_z ])
         cylinder(h=grid_height,r=core_outer_radius, center=true);
@@ -61,3 +72,7 @@ difference() {
         }
     }  
 }
+
+
+
+
