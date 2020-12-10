@@ -2,7 +2,22 @@
 
 Building a water tap with a reduced surface area for higher pressure and integrated brushes.
 
-![Prototype](./screenshots/first_draft.png)
+# Progress
+
+1. [v1](./v1.stl)
+    + Brushes to clean whilst water comes out
+    + Brushes & grid holes are way too small
+    + Threads are far too thick
+    + Radial grid holes not optimal - just one big hole in middle
+    + Takes too long to print (for prototype)
+
+1. [v2](./v2.stl)
+    + Testing M22x0.5 threads (way thinner)
+    + Removing cone for quicker print
+    + Removed brushes for quicker print
+    + Square grid for constant padding between holes
+
+![Screenshot of v1](./screenshots/first_draft.png)
 
 ## Install / Run
 
