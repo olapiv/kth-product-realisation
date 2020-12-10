@@ -30,6 +30,37 @@ difference() {
 
 }
 
+// Grid
+grid_height = 1;
+grid_displacement_z = -core_height/2 - cone_height + grid_height/2;
+// grid_displacement_z = -core_height/2 - cone_height - grid_height*2;
+
+grid_layers = 3;
+grid_hole_radius = 0.5;
+grid_hole_height = grid_height + 1;
+grid_outer_padding = 0.2;
+grid_displacement_r_max = cone_small_radius - cone_width - grid_outer_padding;
+grid_displacement_r_min = 0;
+
+grid_available_distance = grid_displacement_r_max - grid_displacement_r_min;
+grid_inner_padding = grid_available_distance / grid_layers;
+grid_displacement_r = grid_displacement_r_max;
+
+difference() {
+    translate([0,0, grid_displacement_z ])
+        cylinder(h=grid_height,r=cone_small_radius, center=true);
+
+    translate([0,0, grid_displacement_z ])
+        for (layer=[0:grid_layers - 1]) {
+            grid_displacement_r = grid_displacement_r - (grid_inner_padding * layer);
+            for (i=[0:60:359]) {
+                translate([grid_displacement_r*cos(i),grid_displacement_r*sin(i),0])
+                    cylinder(h=grid_hole_height,r=grid_hole_radius, center=true);
+            }
+        }
+}
+
+
 // For threads: https://github.com/adrianschlatter/threadlib
 
 brush_radius = 0.08;
