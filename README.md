@@ -21,6 +21,13 @@ Building a water tap with a reduced surface area for higher pressure and integra
     + Added honeycomb holes for better space usage
     + Holder for external o-ring
     + Added separate honeycomb holes to attach brushes
+    + Does not print holes because they are too small or because printer's configuration was not on highest accuracy
+    + Uses a lot of unnecessary material at the bottom around the holes for the padding
+
+1. [v4](./v4.stl)
+    + Made holes larger and also increased padding between holes
+    + Used entire bottom surface for brush holes
+    + Renamed variables for easier understanding
 
 ## Install / Run
 
