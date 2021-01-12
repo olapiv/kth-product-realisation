@@ -3,8 +3,8 @@ use <threadlib/threadlib.scad>
 
 pi = 3.1415;
 core_outer_radius = 14;
-core_inner_radius = 12;
-core_height = 2;
+core_inner_radius = 10.5;
+core_height = 1.5;
 
 approx_height_nut = 2.52;
 approx_given_displacement_nut = 0.27;

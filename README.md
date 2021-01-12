@@ -28,6 +28,7 @@ Building a water tap with a reduced surface area for higher pressure and integra
     + Made holes larger and also increased padding between holes
     + Used entire bottom surface for brush holes
     + Renamed variables for easier understanding
+    + Corrected diameter for o-ring
 
 ## Install / Run
 
